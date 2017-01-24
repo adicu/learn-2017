@@ -1,0 +1,54 @@
+@import 'lib/reset.min';
+@import 'media_queries';
+@import 'colors';
+@import 'typography';
+@import 'base';
+@import 'layout';
+@import 'responsive';
+
+.hero-section {
+  background: linear-gradient(180deg, lighten($black, 15%), $black);
+  padding: 4rem 0 5rem;
+  width: 100%;
+
+  h1 {
+    padding: 3rem 0 0.5rem;
+
+    span {
+      color: $almost-white;
+      font-size: 10rem;
+      line-height: 1;
+      text-shadow: 0 0 $transparent, 0 0 $transparent;
+      transition: 0.4s ease all;
+
+      &:hover {
+        text-shadow: -6px -6px $trans-yellow, 6px 6px $trans-green;
+      }
+    }
+  }
+
+  h2 {
+    color: $light-gray;
+    font-family: $mono;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1;
+    padding-bottom: 3rem;
+  }
+}
+
+.info {
+  background-color: $almost-white;
+  padding: 3rem 0;
+  width: 100%;
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.618;
+    margin: 0 auto;
+    max-width: 740px;
+    width: 80%;
+  }
+}
+
+

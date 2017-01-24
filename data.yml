@@ -1,0 +1,21 @@
+meta:
+  title: "DevFest 2017: Learn"
+  description: "Curricula for DevFest, Columbia's annual week-long workshop series and hackathon"
+  facebook_image: "/img/lion.png"  # /img/facebook.png
+  twitter_image: "/img/lion.png"  # /img/twitter.png
+  image: "/img/lion.png"  # /img/share.png
+  twitter_handle: "@adicu"  # @minimill_co
+  domain: "learn.devfe.st"  # minimill.co
+  url: "http://learn.devfe.st"  # https://minimill.co
+  google_analytics_id: "UA-90533740-1" # UA-66637918-1
+  theme_color: "#9BD1D4" # #FFFFFF
+
+img:
+  lion: "/img/lion.png"
+  df: "/img/df.png"
+  d: "/img/d.png"
+  f: "/img/f.png"
+
+js:
+  jquery-cdn: "https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"
+  index: "/js/index.js"

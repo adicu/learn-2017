@@ -1,0 +1,121 @@
+@import 'colors';
+
+// Font weights
+$extra-bold: 900;
+$bold: 700;
+$medium: 500;
+$regular: 400;
+$light: 300;
+
+@font-face {
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 400;
+  src: local('avenir-medium-webfont'), url(/font/avenir-medium-webfont.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 700;
+  src: local('avenir_85_heavy-webfont'), url(/font/avenir_85_heavy.ttf) format('ttf');
+}
+
+
+$sans: 'Avenir', Helvetica, sans-serif;
+$mono: 'Inconsolata', monospace;
+
+@mixin link-underline($text-color, $line-color, $hover-color) {
+  color: $text-color;
+  display: inline-block;
+  margin: 0 2px;
+  position: relative;
+
+  &::after {
+    background-color: $transparent;
+    border-radius: 10px;
+    bottom: 1px;
+    content: '';
+    height: 2px;
+    left: 45%;
+    position: absolute;
+    transition: 0.3s ease all;
+    width: 10%;
+  }
+
+  &:hover {
+    color: $hover-color;
+
+    &::after {
+      background-color: $line-color;
+      left: -4px;
+      width: calc(100% + 8px);
+    }
+  }
+
+  @media screen and (max-width: $phone-landscape-max) {
+    &::after {
+      background-color: $line-color;
+      left: 0;
+      width: 100%;
+    }
+
+    &:hover::after {
+      left: 0;
+      width: 100%;
+    }
+  }
+}
+
+h1, %h1 {
+  color: $black;
+  font-family: $sans;
+  font-size: 10rem;
+  font-weight: $bold;
+  letter-spacing: -6px;
+  line-height: 12rem;
+  margin: 0;
+}
+
+h2, %h2 {
+  color: $black;
+  font-family: $sans;
+  font-size: 4rem;
+  font-weight: $bold;
+  letter-spacing: -1px;
+  line-height: 8rem;
+  margin: 0;
+}
+
+h3, %h3 {
+  font-family: $sans;
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+}
+
+h4, %h4 {
+  font-family: $mono;
+  font-size: 1.75rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+h5, %h5 {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+p, .p {
+  font-size: 1rem;
+}
+
+strong {
+  font-weight: $medium;
+}
+
+@media screen and (max-width: $phone-landscape-max) {
+  h1, %h1 {
+    font-size: 6rem !important;
+    letter-spacing: -3px !important;
+  }
+}
