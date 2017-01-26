@@ -182,7 +182,7 @@ gulp.task('serve', ['build'], function() {
 
 gulp.task('deploy', ['build:optimized'], function() {
   gulp.src('')
-    .pipe(shell('scp -r dist/* root@adi-website:../srv/2017.devfe.st/learn/'))
+    .pipe(shell('scp -r dist/* root@adi-website:../srv/2017.devfe.st/public_html/learn/'))
     .on('finish', function() {
       process.stdout.write('Deployed to learn.devfe.st/');
     });

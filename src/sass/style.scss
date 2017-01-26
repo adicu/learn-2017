@@ -8,15 +8,16 @@
 
 .hero-section {
   background: linear-gradient(180deg, lighten($black, 15%), $black);
-  padding: 4rem 0 5rem;
+  padding: 3rem 0;
   width: 100%;
 
   h1 {
-    padding: 3rem 0 0.5rem;
+    line-height: 1;
+    padding: 1rem 0 0.5rem;
 
     span {
       color: $almost-white;
-      font-size: 10rem;
+      font-size: 7rem;
       line-height: 1;
       text-shadow: 0 0 $transparent, 0 0 $transparent;
       transition: 0.4s ease all;
@@ -30,7 +31,7 @@
   h2 {
     color: $light-gray;
     font-family: $mono;
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 400;
     line-height: 1;
     padding-bottom: 3rem;
